@@ -61,28 +61,33 @@
 
 <h3>Finding \( h_1/D \) and \( h_2/D \)</h3>
 1. Calculate \( h_1/D \):
+   <p>
+   <strong>Formula:</strong><br>
+   \( h_1/D = \frac{2.4 \left( \beta \left(1 - \frac{m}{2D}\right) + f_l \gamma \right)}{\xi + 2.4\beta)
+   </p>
+   <p>Substituting the values:</p>
+   <ul>
+       <li> \( \xi = 1 \) (for SFRC)</li>
+       <li> \( \beta = 0.045 \)</li>
+       <li> \( f_l = 0.3025 \)</li>
+       <li> \( \gamma = 0.87 \)</li>
+       <li> \( m/D = 0.4 \)</li>
+   </ul>
+   <p>
+   Substituting these values into the formula:
    \[
-   h_1/D = \frac{2.4 \left( \beta \left(1 - \frac{m}{2D}\right) + f_l \gamma \right)}{\xi + 2.4\beta}
+   h_1/D = \frac{2.4 \left( 0.045 \left(1 - 0.2\right) + 0.3025 \times 0.87 \right)}{1 + 2.4 \times 0.045}
    \]
-   Substituting the values:
-   - \( \xi = 1 \) (for SFRC)
-   - \( \beta = 0.045 \)
-   - \( f_l = 0.3025 \)
-   - \( \gamma = 0.87 \)
-   - \( m/D = 0.4 \)
-
-   \[
-   h_1/D = \frac{2.4 \left( 0.045 \left(1 - \frac{0.4}{2}\right) + 0.3025 \times 0.87 \right)}{1 + 2.4 \times 0.045}
-   \]
-
-   Calculating step-by-step:
-   - \( 1 - \frac{0.4}{2} = 0.8 \)
-   - \( 0.045 \times 0.8 = 0.036 \)
-   - \( 0.3025 \times 0.87 \approx 0.263175 \)
-   - \( 0.036 + 0.263175 \approx 0.299175 \)
-   - \( 2.4 \times 0.045 \approx 0.108 \)
-
-   Finally:
+   </p>
+   <p>Calculating step-by-step:</p>
+   <ul>
+       <li> \( 1 - 0.2 = 0.8 \)</li>
+       <li> \( 0.045 \times 0.8 = 0.036 \)</li>
+       <li> \( 0.3025 \times 0.87 \approx 0.263175 \)</li>
+       <li> \( 0.036 + 0.263175 \approx 0.299175 \)</li>
+       <li> \( 2.4 \times 0.045 \approx 0.108 \)</li>
+   </ul>
+   <p>Finally:</p>
    \[
    h_1/D \approx \frac{2.4 \times 0.299175}{1 + 0.108} \approx \frac{0.717}{1.108} \approx 0.647
    \]
@@ -93,44 +98,40 @@
    \]
 
 <h3>Calculating the Maximum Moment \( M_u \)</h3>
-The maximum moment (\( M_u \)) in the beam is calculated using the formula:
-
+<p>The maximum moment (\( M_u \)) in the beam is calculated using the formula:</p>
 \[
 M_u = 0.064 \times f_{ck} \times B \times D^2
 \]
-
-Substituting the values:
-
+<p>Substituting the values:</p>
 \[
 M_u = 0.064 \times 25 \, \text{MPa} \times 100 \, \text{mm} \times (100 \, \text{mm})^2
 \]
 
 Calculating:
-
-1. \( (100)^2 = 10000 \, \text{mm}^2 \)
-2. \( M_u = 0.064 \times 25 \times 100 \times 10000 \)
-3. \( M_u = 1600000 \, \text{N.mm} \) or \( 1600 \, \text{kN.mm} \)
+<ul>
+    <li> \( (100)^2 = 10000 \, \text{mm}^2 \)</li>
+    <li> \( M_u = 0.064 \times 25 \times 100 \times 10000 \)</li>
+    <li> \( M_u = 1600000 \, \text{N.mm} \) or \( 1600 \, \text{kN.mm} \)</li>
+</ul>
 
 <h3>Calculating the Load \( P_u \)</h3>
-The load (\( P_u \)) applied at the center during the three-point bending test is given by:
-
+<p>The load (\( P_u \)) applied at the center during the three-point bending test is given by:</p>
 \[
 P_u = \frac{4 \cdot M_u}{L}
 \]
-
 Substituting the calculated moment:
-
 \[
 P_u = \frac{4 \cdot 1600 \, \text{kN.mm}}{450 \, \text{mm}}
 \]
 
 Calculating:
-
-1. \( 4 \cdot 1600 = 6400 \, \text{kN.mm} \)
-2. \( P_u = \frac{6400}{450} \approx 14.22 \, \text{kN} \)
+<ul>
+    <li> \( 4 \cdot 1600 = 6400 \, \text{kN.mm} \)</li>
+    <li> \( P_u = \frac{6400}{450} \approx 14.22 \, \text{kN} \)</li>
+</ul>
 
 <h2>Conclusion</h2>
-The calculated load \( P_u \) for the three-point bending test under the specified conditions is approximately **14.22 kN**.
+<p>The calculated load \( P_u \) for the three-point bending test under the specified conditions is approximately <strong>14.22 kN</strong>.</p>
 
 <h2>Comparison of Calculated and Experimental Values</h2>
 <table>
@@ -148,7 +149,7 @@ The calculated load \( P_u \) for the three-point bending test under the specifi
     </tr>
 </table>
 
-<p>The experimental value for this case was found to be **14.40 kN**, indicating a close alignment with the calculated value.</p>
+<p>The experimental value for this case was found to be <strong>14.40 kN</strong>, indicating a close alignment with the calculated value.</p>
 
 </body>
 </html>
